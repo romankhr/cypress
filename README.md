@@ -9,6 +9,8 @@ TypeScript step definitions are in [cypress/integration/passWithTypescript](cypr
 
 Run npm install cypress cucumber cypress-cucumber-preprocessor @types/cypress @types/cucumber ts-node
 
-Create tsconfig.json with { "compilerOptions": { "target": "es5", "lib": ["es5", "dom"], "types": ["cypress"] }, "include": ["**/*.ts"] }
+Run npm install -D cypress-xpath 
+
+Create tsconfig.json with {": { "target": "es5", "lib": ["es5", "dom"], "types": ["cypress"  , "cypress-xpath"] }, "include": ["**/*.ts"] }
 
 
