@@ -1,6 +1,8 @@
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
+// import { When } from "cypress-cucumber-preprocessor/steps";
 // import cypress = require("cypress");
 import LoginPage from "../../pages/LoginPage"
+const loginPage = new LoginPage();
 
 Given('User opens login page', () => {
 
@@ -9,9 +11,9 @@ Given('User opens login page', () => {
 });
 
 When('Click login button on login page', () =>{
-  // LoginPage.clickLoginButton();
+   loginPage.clickLoginButton();
 })
 
 Then('Insert username {string} and password {string} on on login page', (username, password)=>{
-  // LoginPage.login(username, password);
+     loginPage.login(username, password);
 })

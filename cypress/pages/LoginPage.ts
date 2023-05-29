@@ -10,7 +10,7 @@ clickLoginButton(){
 }
 
 login (username, password){
-    const args = { username, password };
+    
     cy.get('input[type="email"]').should('be.visible').type(username);
     cy.get('#idSIButton9').click();
     cy.get('input[type="password"]').should('be.visible').type(password);

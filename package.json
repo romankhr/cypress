@@ -1,5 +1,5 @@
 {
-  "name": "cypress-cucumber-typescript-example",
+  "name": "cypress-cucumber-typescript",
   "version": "1.0.0",
   "description": "Example of how to use Cypress with Cucumber and TypeScript",
   "main": "index.js",
