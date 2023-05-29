@@ -13,4 +13,4 @@ Run npm install -D cypress-xpath
 
 Create tsconfig.json with {": { "target": "es5", "lib": ["es5", "dom"], "types": ["cypress"  , "cypress-xpath"] }, "include": ["**/*.ts"] }
 
-
+Add require('cypress-xpath') in support/index.js
