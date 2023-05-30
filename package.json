@@ -15,7 +15,7 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
-    "stepDefinitions": "cypress/integration"
+    "stepDefinitions": "cypress/e2e/integration"
   },
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
