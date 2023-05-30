@@ -11,6 +11,15 @@ Run npm install cypress cucumber cypress-cucumber-preprocessor @types/cypress @t
 
 Run npm install -D cypress-xpath 
 
-Create tsconfig.json with {": { "target": "es5", "lib": ["es5", "dom"], "types": ["cypress"  , "cypress-xpath"] }, "include": ["**/*.ts"] }
+Create tsconfig.json with { "compilerOptions": { 
+    "target": "es5", 
+    "lib": ["es5", "dom", "es2015"], 
+    "types": ["cypress"  , "cypress-xpath"] }, 
+    "moduleResolution": "node16",
+    "include": ["**/*.ts"] 
+}
 
 Add require('cypress-xpath') in support/index.js
+
+Run to update node modules
+npm install cypress cucumber cypress-cucumber-preprocessor @types/cypress @types/cucumber ts-node
